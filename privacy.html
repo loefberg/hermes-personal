@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Hermes Personal accesses, uses, stores, and shares Google account data.">
+  <title>Privacy policy · Hermes Personal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="./">Hermes Personal<span class="brand-dot" aria-hidden="true"></span></a><a href="./">Back to homepage</a></header>
+  <main class="document">
+    <p class="eyebrow">Last updated · 4 October 2026</p>
+    <h1>Privacy policy</h1>
+    <p class="lead">Hermes Personal is a personal Google account integration operated by Richard Löfberg. It connects a self-hosted Hermes assistant to my own Gmail and Google Calendar.</p>
+    <h2>Google data accessed</h2>
+    <p>The integration requests Gmail read-only access (<code>gmail.readonly</code>) and Google Calendar access (<code>calendar</code>). It can read email content and metadata, including sender, recipient, subject, and attachments when retrieved. It can access calendar and event information, including titles, descriptions, attendees, and times, and can create, edit, or delete calendar events. It does not request Gmail sending or modification permissions, or access to Google Drive, Contacts, Sheets, or Docs.</p>
+    <h2>How data is used</h2>
+    <p>Hermes uses this data to carry out my personal assistant requests, such as finding email, summarizing messages, reviewing my schedule, and managing calendar events. It may also use it for recurring assistant tasks that I configure. Google account data is not sold or used for advertising.</p>
+    <h2>AI processing and other recipients</h2>
+    <p>Relevant email or calendar content may be included in requests to OpenAI, the assistant’s configured AI provider, to generate answers and carry out tasks. This is not a promise that Google data stays entirely on my server. Content sent to OpenAI is processed under its applicable terms, <a href="https://openai.com/policies/privacy-policy/">privacy policy</a>, and my account’s data controls.</p>
+    <p>When I use Hermes through a messaging platform such as Telegram, requests and responses containing Google data also pass through that platform. Google receives the API requests needed to access or update my account. Calendar actions may notify attendees or be visible to other people with access to the affected calendar.</p>
+    <h2>Storage and retention</h2>
+    <p>OAuth credentials and refresh tokens are stored on my private Hestia server. Google data returned to the assistant may be retained in conversation records, tool results, logs, curated memories, or files produced by my requests.</p>
+    <p>The current Hermes configuration automatically prunes eligible ended sessions after 90 days without activity. Active and pinned sessions are excluded, and this rule does not automatically delete separate memories, files, logs, or backup copies. These may remain until I remove them. Data sent to external providers is subject to their own retention policies and account settings.</p>
+    <h2>Revoking access and deleting data</h2>
+    <p>I can revoke the integration’s permission at any time through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation prevents further authorized access, but does not automatically erase previously retained conversation content or files. I can delete the locally stored Google token and remove relevant conversations, memories, files, and applicable backup copies on my server. For assistance with deletion, contact the address below.</p>
+    <h2>This website</h2>
+    <p>This website is a static informational site hosted on GitHub Pages. It contains no login flow, forms, analytics scripts, or tracking cookies, and does not receive OAuth tokens or Google account content. GitHub may process technical request information when serving these pages, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
+    <h2>Changes and contact</h2>
+    <p>I will update this policy if the integration’s permissions or data practices change. Questions about Hermes Personal or its data can be sent to Richard Löfberg at <a href="mailto:richard.lofberg@gmail.com">richard.lofberg@gmail.com</a>.</p>
+  </main>
+  <footer><span>Hermes Personal · Richard Löfberg</span><nav aria-label="Legal"><a href="./">Home</a><a href="terms.html">Terms of use</a></nav></footer>
+</body>
+</html>
